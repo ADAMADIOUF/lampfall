@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import Footer from './components/Footer'
+import House from './components/House'
+import Lands from './components/Lands'
+import Navbar from './components/Navbar'
 
-function App() {
+import Rents from './components/Rents'
+import Sidebar from './components/Sidebar'
+import SingleProduct from './components/SingleProduct'
+import AboutPage from './pages/AboutPage'
+
+import ContactPage from './pages/ContactPage'
+import HomePage from './pages/HomePage'
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Navbar />
+      <Sidebar />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/rent' element={<Rents />} />
+        <Route path='/house' element={<House />} />
+        <Route path='/land' element={<Lands />} />
+        <Route path='/contact' element={<ContactPage />} />
+        <Route path='/about' element={<AboutPage />} />
+
+        <Route path='/products/:id' element={<SingleProduct />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
