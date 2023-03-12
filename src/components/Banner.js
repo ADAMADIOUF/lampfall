@@ -12,7 +12,7 @@ const Banner = () => {
             Aider 2 millions de locataires à trouver leur bonheur.
           </p>
           <a href='/rent' className='btn btn-hero'>
-            explore tours
+            location/achat
           </a>
         </div>
       </div>

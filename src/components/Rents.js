@@ -30,7 +30,7 @@ if (error) {
             Aider 2 millions de locataires à trouver leur bonheur.
           </p>
           <a href='#featured' className='btn btn-hero'>
-            explore tours
+            location
           </a>
         </div>
       </div>
