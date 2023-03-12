@@ -449,7 +449,14 @@ Sidebar
   object-fit: fill;
   border-radius: var(--radius);
   transition: var(--transition);
+  
   cursor: pointer;
+}
+.main-img:hover{
+  transform: scale(1.2);
+}
+.main-bg{
+  overflow: hidden;
 }
 .gallery{
   display: flex;
