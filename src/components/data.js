@@ -11,6 +11,8 @@ import {
   FaCalendarAlt,
   FaWpforms,
 } from 'react-icons/fa'
+import{BsFillHouseHeartFill} from "react-icons/bs"
+import{MdRoundaboutRight} from "react-icons/md"
 export const links = [
   {
     id: 1,
@@ -28,7 +30,7 @@ export const links = [
     id: 3,
     url: '/house',
     text: 'maisons',
-    icon: <FaFolderOpen />,
+    icon: <BsFillHouseHeartFill />,
   },
   {
     id: 4,
@@ -40,7 +42,7 @@ export const links = [
     id: 5,
     url: '/about',
     text: 'á propos',
-    icon: <FaWpforms />,
+    icon: <MdRoundaboutRight />,
   },
   {
     id: 6,
