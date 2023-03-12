@@ -353,6 +353,21 @@ Sidebar
   margin-top: 2rem;
   
 }
+.product-f-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-f-img {
+    overflow: hidden;
+  }
+  .product-f-img img {
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  .product-f-img img:hover {
+    transform: scale(1.2);
+  }
 .product-detail a{
   color: var(--clr-black);
 }
@@ -363,18 +378,10 @@ Sidebar
   cursor: pointer;
   margin: 2rem;
 }
-.product-detail:hover{
-  transform: scale(1.1);
-}
+
 .product-detail h5{
   font-size: 1rem;
   text-transform: uppercase;
-}
-.product-img{
-  width: 100%;
-
-  border-radius: var(--radius);
-
 }
 
 .product-icons{

@@ -16,7 +16,7 @@ const Products = () => {
   products
  } = useProductsContext()
 const[currentPage,setCurrentPage]= useState(1)
-const[productsPerPage]= useState(2)
+const[productsPerPage]= useState(4)
  if (loading) {
    return <Loading />
  }
@@ -35,7 +35,9 @@ const[productsPerPage]= useState(2)
           return (
             <div key={id} className='product-detail'>
               <a href={`/products/${id}`}>
-                <img src={img} alt={name} className='product-img' />
+                <div className='product-f-img'>
+                  <img src={img} alt={name} className='product-img' />
+                </div>
                 <h5>{name}</h5>
 
                 <div className='product-icons'>
